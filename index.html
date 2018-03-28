@@ -1,0 +1,331 @@
+<!doctype html>
+<!--
+Techdegree| Project 9
+=====================================================================================
+by Humberto Ventura
+=====================================================================================
+-->
+<html>
+<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+        <title>Web App Dashboard</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/toogle-switch.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </head>
+<body>
+<!--top-->
+<div id="top">
+			<header>
+				<ul>
+					<li id="app"><a href="#"><span id="bold">Your</span>App<span id="tm">TM</span></a></li>
+					<li class="profile" id="notify"><img src="img/icon-bell.svg" alt="alert"><div id="dot"></div></li>
+					<li id="divider">|</li>
+					<li class="profile"><img class="avatar" src="img/me.jpg" alt="photo"></li>
+					<li class="profile" id="profile">Humberto Ventura</li>
+				</ul>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="#" title="dashboard"><img src="img/icon-dashboard.svg" alt="dashboard icon"></a></li>
+					<li><a href="#modulos" title="new members"><img src="img/icon-members.svg" alt="members icon"></a></li>
+					<li><a href="#graphics" title="charts"><img src="img/icon-visits.svg" alt="visits icon"></a></li>
+					<li><a href="#settings" title="settings"><img src="img/icon-settings.svg" alt="settings icon"></a></li>
+				</ul>
+			</nav>
+            
+		</div>
+   <!--top-->  
+   
+   <!--notes-->
+   	<div id="notifications">
+				<h3>Notifications</h3>
+				<div class="note-message">
+					<img class="note-icon" src="img/icon-message.svg" alt="new message">
+					<p class="note-text"><span class="highlight-name">Indiana Jones</span> sent you a message.</p>
+					<p class="note-date">30 minutes ago</p>
+				</div>
+				
+                <div class="note-message">
+					<img class="note-icon" src="img/icon-message.svg" alt="new message">
+					<p class="note-text"><span class="highlight-name">Harrison Ford</span> sent you a message.</p>
+					<p class="note-date">30 minutes ago</p>
+				</div>
+                
+                <div class="note-message">
+					<img class="note-icon" src="img/icon-message.svg" alt="new message">
+					<p class="note-text"><span class="highlight-name">Sean Connery</span> sent you a message.</p>
+					<p class="note-date">30 minutes ago</p>
+				</div>
+			</div>   
+            <!--notes-->
+            
+            <!--main-->
+           <div id="main">
+           <div id="searchbar">
+				<h3 id="title">Dashboard</h3>
+				<div id="search-column"><input id="search" type="search" placeholder="Search">
+				</div>
+           </div> 
+           <!--message-->
+           <div id="message">
+				<div id="message-div"><span id="alert">This is an alert message</span><span id="close-button">X</span></div>
+			</div>
+            <!--message-->
+            
+            
+            <!--graphics-->
+               
+            <div id="graphics">
+   <div id="traffic-graphic">
+   <h2>Traffic</h2>
+  <div id="traffic-buttons">
+						<div id="hourly">Hourly</div>
+							<div id="daily">Daily</div>
+							<div id="weekly" class="active">Weekly</div>
+							<div id="monthly">Monthly</div>
+						</div>
+                        
+		<canvas id="trafficGraphic"></canvas>
+   </div>
+   <div id="bottom-charts">
+					<div id="daily-traffic">
+						<h2>Daily Traffic</h2>
+					<canvas id="dailyTrafficGraphic"></canvas>
+					</div>
+					<div id="mobile-graphic">
+						<h2 class="left">Mobile Users</h2>
+		<canvas id="mobileUsersGraphic" ></canvas>
+					</div>
+				</div>
+
+            </div>
+              <!--graphics-->
+              
+               <div id="social">
+				<h2>Social Stats</h2>
+                
+				<ul>
+                <!--twitter-->
+					<li><svg class="social-circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="-10 -12 50 50" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+				
+				<!--icon-->
+				<path d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+					c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+					c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+					c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+					c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z" style="fill:white" />
+					
+				</svg>
+                
+                
+                <div class="social-container"><div class="social-name">Twitter</div><div class="social-number">45,678</div></div>
+                </li>
+                
+                <!--twitter-->
+                
+                <!--facebook-->
+                
+					<li><svg class="social-circle" enable-background="new 0 0 70 70" version="1.1" viewBox="-5 -5 70 70" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" style="fill:white"/>
+                    </svg>
+                    <div class="social-container"><div class="social-name">Facebook</div><div class="social-number">54,987</div></div></li>
+                    <!--facebook-->
+                    
+                    <!--google plus-->
+                    
+					<li>
+					
+					
+					<svg class="social-circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="-10 -10 50 50" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+					 
+					 
+					<path d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+					c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+					c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+					c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+					c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+					c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+					c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+					c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+					c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+					c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+					c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+					c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+					c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+					c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+					c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+					h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z" style="fill:white"/>
+			</svg>
+           <div class="social-container"><div class="social-name">Google+</div><div class="social-number">34,563</div></div></li>
+            
+            <!--google plus-->
+            
+         </ul>
+			</div>
+            
+               <!--modulos-->  
+           <div id="modulos">
+            <!--members-->
+         <div id="new-members"><h2>New Members</h2>
+         
+           <div class="new-member">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo">
+							<div class="member-names">Jones Jers</div>
+							<div class="dates">23/19/16</div>
+							<div class="member-emails">jones@gmail.com</div>
+						</div>
+                        
+                        
+                        		<div class="new-member">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo">
+							<div class="member-names">Jones Jers</div>
+							<div class="dates">23/19/16</div>
+							<div class="member-emails">jones@gmail.com</div>
+						</div>
+                        
+                        
+                        		<div class="new-member">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo">
+							<div class="member-names">Jones Jers</div>
+							<div class="dates">23/19/16</div>
+							<div class="member-emails">jones@gmail.com</div>
+						</div>
+                        
+                    </div>
+                    <!--members-->
+                    <!--activity-->
+                    <div id="recent-activity">
+                <h2>Recent Activity</h2>
+                
+                
+						<div class="activity">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo" >
+							<div class="description"><strong>Humberto</strong> added a comment</div>
+							<div class="time">3 days ago</div>
+                            <div class="activity-icon"><img src="img/icon-comment.svg" alt="new comment"></div>
+						</div>
+                        
+                        
+						<div class="activity">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo" >
+							<div class="description"><strong>Humberto</strong> just signed</div>
+							<div class="time">3 days ago</div>
+                            <div class="activity-icon"><img src="img/icon-member.svg" alt="new member"></div>
+						</div>
+                        
+                        
+                        
+						<div class="activity">
+							<img class="avatar inline" src="img/me.jpg" alt="user photo" >
+							<div class="description"><strong>Humberto</strong> just posted</div>
+							<div class="time">2 days ago</div>
+                            <div class="activity-icon"><img src="img/icon-post.svg" alt="new comment"></div>
+						</div>
+                        
+                        
+          </div>
+           <!--activity-->
+           
+         <!--message-->
+         	<div id="message-user"><h2>Message User</h2>
+					<form id="message-form">
+						<input id="searchu" type="search" name="search" placeholder="Search User">
+						<textarea id="textarea" placeholder="Message  User"></textarea>
+						<button id="send-button" type="submit">Send</button>
+					</form>
+				</div>
+         <!--message-->
+         
+                <!--settings-->
+         <div id="settings"><h2>Settings</h2>
+
+                      <!--email-->
+					<div id="e-toggle">
+						<div id="s-email">Send Email Notifications</div>
+						<label class="switch-light switch-ios" onclick="">
+						<input id="email-switch" type="checkbox">
+								<span id="toggle-button">
+								<span class="off-switch">Off</span>
+								<span class="on-switch">On</span>
+								<a></a>
+							</span>
+						</label>
+					</div>
+
+                    <!--email-->
+                    
+                      <!--public-->
+					<div id="p-toggle">
+						<div id="s-public">Set Profile to Public</div>
+						<label class="switch-light switch-ios" onclick="">
+						<input id="public-switch" type="checkbox">
+								<span id="toggle-public-button">
+								<span class="off-switch">Off</span>
+								<span class="on-switch">On</span>
+								<a></a>
+							</span>
+						</label>
+					</div>
+                <!--public-->
+                <!--timezone-->
+                <select id="timezone">
+                <option value="" selected > Select Timezone</option>
+                <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+						<option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+						<option value="-10.0">(GMT -10:00) Hawaii</option>
+						<option value="-9.0">(GMT -9:00) Alaska</option>
+						<option value="-8.0">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+						<option value="-7.0">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+						<option value="-6.0">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+						<option value="-5.0">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+						<option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+						<option value="-3.5">(GMT -3:30) Newfoundland</option>
+						<option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+						<option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+						<option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+						<option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+						<option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+						<option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+						<option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+						<option value="3.5">(GMT +3:30) Tehran</option>
+                        <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+						<option value="4.5">(GMT +4:30) Kabul</option>
+						<option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+						<option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+						<option value="5.75">(GMT +5:45) Kathmandu</option>
+						<option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+						<option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+						<option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+						<option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+						<option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+						<option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+						<option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+						<option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                </select>
+                <!--timezone-->
+                
+                <div id="s-buttons">
+						<button id="save-button" type="submit">Save</button>
+						<button id="cancel-button" type="submit">Cancel</button>
+					</div>
+				</div>
+         <!--settings-->
+           </div>
+           <!--modulos-->
+           </div>
+           <!--main-->
+       <!--scripts-->    
+       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+       <script  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.js"></script>
+       <script  src="js/autocomplete.min.js"></script>
+     <script src="js/graphics.js"></script>
+      <script  src="js/application.js"></script>
+         <!--scripts-->       
+</body>
+</html>
